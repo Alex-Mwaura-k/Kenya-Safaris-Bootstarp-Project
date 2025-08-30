@@ -1,5 +1,5 @@
 .css-item {
-  height: 520px;
+  height: 510px;
 }
 .css-img {
   height: 100%;
@@ -7,10 +7,21 @@
   filter: brightness(50%);
 }
 .custom-caption {
-  top: 120px;
+  top: 25%;
+}
+#booking-Modal .form-control:focus,
+#booking-Modal .form-select:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: #ccc;
 }
 @media screen and (max-width: 768px) {
   .css-item {
     height: 320px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .custom-caption {
+    top: 0;
   }
 }
