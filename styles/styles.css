@@ -19,9 +19,17 @@
   .css-item {
     height: 320px;
   }
-}
-@media screen and (max-width: 550px) {
   .custom-caption {
-    top: 0;
+    top: 15%;
+  }
+  .custom-caption > p {
+    font-size: 1rem !important;
+  }
+  .custom-caption h2 {
+    font-size: 1rem;
+  }
+  .custom-caption button {
+    padding: 0.3rem 1.4rem !important;
+    font-size: 0.9rem !important;
   }
 }
