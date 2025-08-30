@@ -9,6 +9,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="/styles/styles.css" />
     <script
       defer
@@ -68,15 +72,19 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search" data-bs-theme="light">
+          <form class="d-flex items-center gap-1" role="search">
             <input
-              class="form-control me-2"
+              class="form-control rounded-pill shadow-sm px-3"
               type="search"
-              placeholder="Search"
+              placeholder="Search..."
               aria-label="Search"
+              style="outline: none; box-shadow: none; border-color: #484848"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+            <button
+              class="btn btn-outline-success rounded-pill px-3 shadow-sm"
+              type="submit"
+            >
+              <i class="bi bi-search"></i>
             </button>
           </form>
         </div>
@@ -132,21 +140,28 @@
                 </div>
 
                 <div class="row mb-3">
-                  <div class="col">
+                  <div class="form-floating col">
                     <input
+                      id="datePicker"
                       type="date"
                       class="form-control"
                       placeholder="Pick a desired date"
                       onfocus="this.showPicker()"
                     />
+                    <label class="mx-2 mb-2" for="datePicker"
+                      >Schedule Date</label
+                    >
                   </div>
-                  <div class="col">
-                    <select class="form-select">
-                      <option selected disabled>--Select Destination--</option>
+                  <div class="form-floating col">
+                    <select id="destinationSelector" class="form-select">
+                      <option selected disabled></option>
                       <option value="1">Diani - KES 42,000/=</option>
                       <option value="2">Nanyuki - KES 15,000/=</option>
                       <option value="3">Zanzibar - KES 92,000/=</option>
                     </select>
+                    <label class="mx-2 mb-2" for="destinationSelector"
+                      >Select Destination</label
+                    >
                   </div>
                 </div>
               </form>
