@@ -1,5 +1,5 @@
 .css-item {
-  height: 510px;
+  height: 500px;
 }
 .css-img {
   height: 100%;
@@ -7,13 +7,18 @@
   filter: brightness(50%);
 }
 .custom-caption {
-  top: 25%;
+  top: 22%;
 }
 #booking-Modal .form-control:focus,
 #booking-Modal .form-select:focus {
   box-shadow: none;
   outline: none;
   border-color: #ccc;
+}
+
+.bannerLable {
+  height: 40px;
+  background-color: #d9d9d9;
 }
 @media screen and (max-width: 768px) {
   .css-item {
@@ -31,5 +36,11 @@
   .custom-caption button {
     padding: 0.3rem 1.4rem !important;
     font-size: 0.9rem !important;
+  }
+}
+@media screen and (max-width: 985px) {
+  .bannerLable {
+    padding: 0.5rem;
+    height: unset;
   }
 }
