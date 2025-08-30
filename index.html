@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      defer
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+    <title>Kenya-Safaris</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><span class="text-danger" style="font-family: cursive">Kenya</span
+          >.safaris</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Destinations
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Diani</a></li>
+                <li><a class="dropdown-item" href="#">Nanyuki</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Zanzibar</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" data-bs-theme="light">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End OF NAVBAR -->
+    <main>
+      <div id="carouselCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active css-item">
+            <img
+              src="https://picsum.photos/id/219/2400"
+              class="d-block w-100 css-img"
+              alt="carousel_image"
+            />
+            <div class="carousel-caption mt-7 d-md-block custom-caption">
+              <p class="fs-4 mt-4">Discover Kenya's Wild Beauty</p>
+              <h2 class="fw-bold mt-4">Stunning landscapes and wildlife</h2>
+              <button
+                type="button"
+                class="btn btn-outline-light fw-bold px-5 py-2 mt-4"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item css-item">
+            <img
+              src="https://picsum.photos/id/666/2400"
+              class="d-block w-100 css-img"
+              alt="carousel_image"
+            />
+            <div class="carousel-caption mt-7 d-md-block custom-caption">
+              <p class="fs-4 mt-4">Unforgettable Safari Adventures Await</p>
+              <h2 class="fw-bold mt-4">Embark on a thrilling safari</h2>
+              <button
+                type="button"
+                class="btn btn-outline-light fw-bold px-5 py-2 mt-4"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item css-item">
+            <img
+              src="https://picsum.photos/id/1011/2400"
+              class="d-block w-100 css-img"
+              alt="carousel_image"
+            />
+            <div class="carousel-caption mt-7 d-md-block custom-caption">
+              <p class="fs-4 mt-4">Discover Kenya's Wild Beauty</p>
+              <h2 class="fw-bold mt-4">Experience the best of Kenya</h2>
+              <button
+                type="button"
+                class="btn btn-outline-light fw-bold px-5 py-2 mt-4"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+    <!-- END OF MAIN -->
+    <footer></footer>
+  </body>
+</html>
